@@ -1004,11 +1004,6 @@ html {
         z-index: -10;
 
         @include respond(tab-port) {
-            top: -55rem;
-            right: -20rem;
-        }
-
-        @include respond(phone) {
             display: none;
         }
 
