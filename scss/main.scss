@@ -1003,7 +1003,7 @@ html {
         right: -60rem;
         z-index: -10;
 
-        @include respond(tab-port) {
+        @include respond(tab-land) {
             display: none;
         }
 
