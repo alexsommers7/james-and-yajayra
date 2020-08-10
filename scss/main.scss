@@ -194,7 +194,7 @@ html {
     grid-gap: 3rem;
 
     @include respond(tab-port) {
-        grid-template-rows: repeat(4, 40rem);
+        grid-template-rows: repeat(auto, 40rem);
     }
 
     &::before,
@@ -254,12 +254,13 @@ html {
             grid-column: 2 / span 1;
 
             @include respond(tab-port) {
-                grid-column: 3 / span 2;
+                grid-row: 4 / span 1;
+                grid-column: 1 / span 2;
             }
 
             @include respond(phone) {
                 grid-column: 1 / -1;
-                grid-row: 2 / span 1;
+                grid-row: 5 / span 1;
             }
         }
 
@@ -282,12 +283,12 @@ html {
             grid-column: 1 / span 2;
 
             @include respond(tab-port) {
-                grid-row: 4 / -1;
-                grid-column: 1 / span 2;
+                grid-row: 1 / span 1;
+                grid-column: 3 / span 2;
             }
 
             @include respond(phone) {
-                grid-row: 4 / span 1;
+                grid-row: 2 / span 1;
                 grid-column: 1 / -1;
             }
         }
@@ -302,7 +303,7 @@ html {
             }
 
             @include respond(phone) {
-                grid-row: 5 / -1;
+                grid-row: 4 / span 1;
                 grid-column: 1 / -1;
             }
         }
