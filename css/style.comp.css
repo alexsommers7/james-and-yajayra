@@ -18,7 +18,8 @@ body {
   font-family: 'Alex Brush', cursive;
   font-weight: 400;
   line-height: 1.6;
-  color: #747474; }
+  color: #747474;
+  overflow-x: hidden; }
 
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   margin: 0;
@@ -403,8 +404,10 @@ figure {
       background-image: url(/img/compressed/section-4--1@2x.jpg); } }
   @media only screen and (max-width: 56.25em) {
     .section--4 {
+      background-attachment: unset;
       height: 50vh;
-      background-size: contain; } }
+      background-size: contain;
+      margin: -3rem 0; } }
 
 .section--5 {
   display: grid;

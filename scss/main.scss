@@ -587,8 +587,10 @@ html {
     }
 
     @include respond(tab-port) {
+        background-attachment: unset;
         height: 50vh;
         background-size: contain;
+        margin: -3rem 0;
     }
 }
 
