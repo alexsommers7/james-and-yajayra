@@ -250,8 +250,8 @@ html {
         }
 
         &:nth-child(2) {
-            grid-row: 1 / span 1;
-            grid-column: 2 / span 1;
+            grid-row: 3 / -1;
+            grid-column: 3 / span 1;
 
             @include respond(tab-port) {
                 grid-row: 4 / span 1;
@@ -294,8 +294,8 @@ html {
         }
 
         &:nth-child(5) {
-            grid-row: 3 / -1;
-            grid-column: 3 / span 1;
+            grid-row: 1 / span 1;
+            grid-column: 2 / span 1;
 
             @include respond(tab-port) {
                 grid-row: 5 / span 1;
