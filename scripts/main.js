@@ -36,8 +36,15 @@ fadeElms.forEach(el => observer.observe(el));
 
 
 // SMOOTH MOUSE SCROLL
+var mq = window.matchMedia( "(min-width: 1300px)" );
+
 function init(){
-	new SmoothScroll(document,120,15)
+	if (mq.matches) {
+		new SmoothScroll(document,120,15)
+	}
+	else {
+		return;
+	}
 }
 
 function SmoothScroll(target, speed, smooth) {
