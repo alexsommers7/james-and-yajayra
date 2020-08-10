@@ -40,7 +40,6 @@ $layout-section-padding-small: 0 1.5rem;
 html {
     box-sizing: border-box;
     font-size: 62.5%;
-    overflow-x: hidden;
 
     @include respond(tab-land) {
         font-size: 56.25%;
