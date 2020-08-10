@@ -967,8 +967,6 @@ html {
 
 // SECTION 8
 .section--8 {
-    overflow-x: hidden;
-
     & > figure {
         width: 75%;
         margin: auto;
@@ -1011,8 +1009,7 @@ html {
         }
 
         @include respond(phone) {
-            top: -65rem;
-            right: -20rem;
+            display: none;
         }
 
         &:hover {
